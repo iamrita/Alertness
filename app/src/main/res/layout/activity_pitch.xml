@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/plot_volume"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/max_pitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Max Pitch :"
+            />
+        <TextView
+            android:id="@+id/ave_pitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Average Pitch :"
+            />
+        <TextView
+            android:id="@+id/num_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Frequencies :"
+            />
+        <TextView
+            android:id="@+id/power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Power :"
+            />
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:onClick="saveAction"
+            />
+    </LinearLayout>
+
+</LinearLayout>

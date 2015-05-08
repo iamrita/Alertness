@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentBottom="true"
+    android:divider="?android:listDivider"
+    android:dividerPadding="2.5dp"
+    android:showDividers="middle"
+    android:padding="20dip"
+    android:weightSum="2">
+
+    <TextView
+        android:id="@+id/pagetitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:typeface="serif"
+        android:textSize="24sp"
+        android:text="Check Voice"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10px"
+        android:layout_margin="10px">
+        <TextView
+            android:id="@+id/timeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:typeface="serif"
+            android:textSize="20sp"
+            android:text="Timer:"
+            />
+        <TextView
+            android:id="@+id/timerBar"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:typeface="serif"
+            android:textSize="20sp"
+            android:background="#0000FF"
+            android:textColor="#FFFFFF"
+            android:text="0" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/baselineLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:typeface="serif"
+            android:textSize="18sp"
+            android:text="Step 1 : Capture background noise"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:padding="20px"
+            android:layout_margin="10px">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/baseline_button"
+            android:text="Record Noise"
+            android:onClick="baseAction"/>
+        <TextView
+            android:id="@+id/baselineBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:typeface="serif"
+            android:textSize="18sp"
+            android:text=" 0 "
+         />
+         </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10px"
+        android:layout_margin="10px">
+        <TextView
+            android:id="@+id/step2lineLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:typeface="serif"
+            android:textSize="18sp"
+            android:text="Step 2 : Record your voice"/>
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/start_button"
+            android:text="Start"
+            android:layout_weight="1.0"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/play_button"
+            android:text="Play"
+            android:onClick="playAction"
+            android:layout_weight="1.0"/>
+
+        </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10px"
+        android:layout_margin="10px">
+        <TextView
+            android:id="@+id/step3lineLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:typeface="serif"
+            android:textSize="18sp"
+            android:text="Step 3 : Check Voice Attributes"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/graph_button"
+            android:text="Energy"
+            android:onClick="energyAction"
+            android:layout_weight="1.0"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/filter_button"
+            android:text="Pitch"
+            android:onClick="freqAction"
+            android:layout_weight="1.0"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+</LinearLayout>

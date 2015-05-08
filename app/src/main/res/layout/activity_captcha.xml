@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.amrita2015.app.CaptchaActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="#93d7ff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="550dp"
+        android:layout_height="451dp"
+        android:layout_gravity="center_horizontal|top">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView1"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/stripes2"
+            android:layout_marginTop="20dp"
+            android:cropToPadding="false" />
+
+        <TextView
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Enter in the letters above"
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+            android:layout_marginLeft="73dp" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/userInput"
+            android:layout_gravity="center_horizontal"
+            android:background="#ff729a" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="76dp">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/refreshbutton"
+                android:layout_marginLeft="220dp"
+                android:background="@drawable/refresh2" />
+
+            <Button
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:id="@+id/button1"
+                android:background="@drawable/arrow"
+                android:shadowColor="#4f6fff"
+                android:layout_marginLeft="10dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:id="@+id/saveButton" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/scoreCard"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:layout_width="307dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/enterID"
+            android:layout_gravity="center_horizontal"
+            android:text="Enter in ID" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read"
+        android:id="@+id/read"
+        android:layout_gravity="center_horizontal|bottom" />
+
+</FrameLayout>

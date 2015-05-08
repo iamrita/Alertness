@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <com.amrita2015.app.Animation
+            android:id="@+id/testReflex"
+            android:layout_width="match_parent"
+            android:layout_height="462dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/saveButton"
+            android:layout_weight="0.33" />
+
+        <Button
+            android:id="@+id/startBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startAction"
+            android:text="Start" />
+        <Button
+            android:id="@+id/stopBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="stopAction"
+            android:text="Stop" />
+        <Button
+            android:id="@+id/clearBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clearAction"
+            android:text="Reset" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/meter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        />
+</LinearLayout>
+

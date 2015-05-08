@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amrita2015.app" >
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.amrita2015.app.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.amrita2015.app.CaptchaActivity"
+            android:label="@string/title_activity_captcha" >
+        </activity>
+        <activity
+            android:name="com.amrita2015.app.VoiceActivity"
+            android:label="@string/title_activity_voice" >
+        </activity>
+        <activity
+            android:name="com.amrita2015.app.BalanceActivity"
+            android:label="@string/title_activity_balance"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.amrita2015.app.record_main"
+            android:label="@string/title_activity_record_main" >
+        </activity>
+        <activity
+            android:name="com.amrita2015.app.SpeechtoTextActivity"
+            android:label="@string/title_activity_speechto_text" >
+        </activity>
+        <activity
+            android:name="com.amrita2015.app.VolumeActivity"
+            android:label="@string/title_activity_volume" >
+        </activity>
+        <activity
+            android:name="com.amrita2015.app.GraphActivity"
+            android:label="@string/title_activity_graph" >
+        </activity>
+        <activity
+            android:name="com.amrita2015.app.PitchActivity"
+            android:label="@string/title_activity_pitch" >
+        </activity>
+        <activity
+            android:name="com.amrita2015.app.ReflexActivity"
+            android:label="@string/title_activity_reflex" >
+        </activity>
+        <activity
+            android:name="com.amrita2015.app.DisplayData"
+            android:label="@string/title_activity_display_data" >
+        </activity>
+    </application>
+
+</manifest>

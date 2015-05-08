@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Alertness</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_captcha">CaptchaActivity</string>
+    <string name="title_activity_voice">VoiceActivity</string>
+    <string name="title_activity_balance">BalanceActivity</string>
+    <string name="title_activity_record_main">record_main</string>
+    <string name="title_activity_graph">GraphActivity</string>
+    <string name="title_activity_speechto_text">SpeechtoTextActivity</string>
+    <string name="title_activity_volume">VolumeActivity</string>
+    <string name="title_activity_pitch">PitchActivity</string>
+    <string name="title_activity_reflex">ReflexActivity</string>
+    <string name="title_activity_display_data">DisplayData</string>
+
+</resources>
